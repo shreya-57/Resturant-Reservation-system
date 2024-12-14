@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.main_container {
+  padding: 20px;
+  .nav {
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      color: white;
+    }
+    .menu {
+      /* background-color: red; */
+      display: flex;
+      align-items: center;
+      width: 500px;
+      justify-content: space-between;
+      a {
+        font-size: 20px;
+        color: white;
+        transition: 1s;
+      }
+      a:hover {
+        color: rgb(225, 173, 62);
+      }
+    }
+    .logout_btn {
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+      button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(225, 173, 62);
+        a {
+          font-size: 20px;
+          color: rgb(92, 222, 120);
+        }
+      }
+    }
+  }
+}
+.reservation_container{
+  padding: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+}
+.table_container{
+  padding: 20px;
+}
+table {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: white;
+}
+
+table th {
+  background-color: #333;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #a8a8a8;
+}
+
+table tr:hover {
+  background-color: #a8a8a8;
+  color: #333;
+
+}
+
+ td a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+td a:hover {
+  background-color: #555;
+}
